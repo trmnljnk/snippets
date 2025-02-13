@@ -3,7 +3,7 @@
 Remove all lines that contain alphabetic characters in Vim, you can use the global command with a regular expression that matches alphabetic characters. Here’s how you can do it: 
 
 ```vim
-  :g/\a/d
+:g/\a/d
 ```
 
 •	: enters command-line mode.
@@ -43,3 +43,14 @@ Remove last character from every line.
 ```vim
 :%s/.\{1}$//
 ```
+
+To remove the quotes around the numbers in Vim, you can use the following command:
+
+```vim
+:%s/"\(\d\+\)"/\1/g
+```
+
+•	:%s means “search and replace in the whole file.”
+•	"(\d\+)" matches quotes around one or more digits (\d\+ matches one or more digits).
+•	\1 replaces the match with the first captured group (the number without the quotes).
+•	/g applies the replacement globally on each line.
