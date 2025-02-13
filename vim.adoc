@@ -67,4 +67,16 @@ Delete all comma's from every line.
 :%s/\,//g
 ```
 
+To replace every comma with a new line character in Vim, you can use the following command in Normal mode:
+
+```
+:%s/,/\r/g
+```
+
+•	:%s: This specifies that the substitution should happen on all lines in the file (% represents the entire file).
+•	,: This is the character to search for.
+•	\r: This represents a new line in Vim’s substitution.
+•	g: This makes the substitution global, replacing all occurrences on each line.
+
+
 
