@@ -1,0 +1,40 @@
+## vim
+
+Remove all lines that contain alphabetic characters in Vim, you can use the global command with a regular expression that matches alphabetic characters. Here’s how you can do it: 
+
+```vim
+  :g/\a/d
+```
+
+•	: enters command-line mode.
+•	g stands for “global,” applying the command to all matching lines.
+•	/\a/ is a regular expression where \a matches any alphabetic character (equivalent to [A-Za-z]).
+•	d is the delete command, which deletes the matching lines.
+
+
+1.	Remove Lines with Only Whitespace (Indented Blank Lines):
+If some “empty” lines contain spaces or tabs, use this command instead:
+
+```vim
+  :g/^$/d
+```
+
+2.	Remove Consecutive Empty Lines (Leave Only One Blank Line):
+To compress multiple empty lines into a single blank line:
+
+```vim
+  :g/^\s*$/,/./-j
+```
+
+Search for a line starting with 201812 in Vim, you can use the following command:
+  
+```vim
+/^201812
+```
+
+Add an character to every line.
+
+```vim
+  :% norm A,
+```
+
