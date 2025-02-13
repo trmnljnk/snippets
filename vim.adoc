@@ -12,18 +12,18 @@ Remove all lines that contain alphabetic characters in Vim, you can use the glob
 •	d is the delete command, which deletes the matching lines.
 
 
-1.	Remove Lines with Only Whitespace (Indented Blank Lines):
+1	Remove Lines with Only Whitespace (Indented Blank Lines):
 If some “empty” lines contain spaces or tabs, use this command instead:
 
 ```vim
-  :g/^$/d
+:g/^$/d
 ```
 
-2.	Remove Consecutive Empty Lines (Leave Only One Blank Line):
+2	Remove Consecutive Empty Lines (Leave Only One Blank Line):
 To compress multiple empty lines into a single blank line:
 
 ```vim
-  :g/^\s*$/,/./-j
+:g/^\s*$/,/./-j
 ```
 
 Search for a line starting with 201812 in Vim, you can use the following command:
@@ -35,6 +35,11 @@ Search for a line starting with 201812 in Vim, you can use the following command
 Add an character to every line.
 
 ```vim
-  :% norm A,
+:% norm A,
 ```
 
+Remove last character from every line.
+
+```vim
+:%s/.\{1}$//
+```
