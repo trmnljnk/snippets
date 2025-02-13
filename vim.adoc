@@ -55,8 +55,16 @@ To remove the quotes around the numbers in Vim, you can use the following comman
 •	\1 replaces the match with the first captured group (the number without the quotes).
 •	/g applies the replacement globally on each line.
 
+
+```vim
+%s/"//g
+```
+
+
 Delete all comma's from every line.
 
 ```vim
 :%s/\,//g
 ```
+
+
