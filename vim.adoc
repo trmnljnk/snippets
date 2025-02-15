@@ -69,7 +69,7 @@ Delete all comma's from every line.
 
 To replace every comma with a new line character in Vim, you can use the following command in Normal mode:
 
-```
+```vim
 :%s/,/\r/g
 ```
 
@@ -80,7 +80,7 @@ To replace every comma with a new line character in Vim, you can use the followi
 
 Wrap each line in a text file with double quotes 
 
-```
+```vim
 :%s/.*/"&"/
 ```
 Explanation:
