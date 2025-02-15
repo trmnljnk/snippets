@@ -88,6 +88,18 @@ Explanation:
 •	.*: Matches the entire content of each line.
 •	"&": Replaces the matched content with itself wrapped in double quotes (the & represents the matched content).
 
+To delete all rows downward from row 1742 until the end of the file 
+
+```vim
+:1742
+```
+
+dG
+
+Explanation:
+•	:1742: Moves the cursor to line 1742.
+•	dG: Deletes from the current line (where the cursor is) to the last line of the file.
+
 
 
 
