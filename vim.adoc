@@ -78,6 +78,17 @@ To replace every comma with a new line character in Vim, you can use the followi
 •	\r: This represents a new line in Vim’s substitution.
 •	g: This makes the substitution global, replacing all occurrences on each line.
 
+Wrap each line in a text file with double quotes 
+
+```
+:%s/.*/"&"/
+```
+Explanation:
+•	%: Apply the substitution (s) to all lines in the file.
+•	.*: Matches the entire content of each line.
+•	"&": Replaces the matched content with itself wrapped in double quotes (the & represents the matched content).
+
+
 
 
 
