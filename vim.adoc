@@ -97,6 +97,7 @@ To delete all rows downward from row 1742 until the end of the file
 dG
 
 Explanation:
+
 *	:1742: Moves the cursor to line 1742.
 *	dG: Deletes from the current line (where the cursor is) to the last line of the file.
 
