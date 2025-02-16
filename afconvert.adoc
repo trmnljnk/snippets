@@ -1,6 +1,6 @@
 = `afconvert` Command Breakdown
 
-== Command:
+[source, bash]
 `afconvert in.flac out.m4a -f m4af -d aacp -q 127 -s 2 -c 2`
 
 == Description:
