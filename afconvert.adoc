@@ -1,7 +1,7 @@
 = `afconvert` Command Breakdown
 
 [source, bash]
-`afconvert in.flac out.m4a -f m4af -d aacp -q 127 -s 2 -c 2`
+afconvert in.flac out.m4a -f m4af -d aacp -q 127 -s 2 -c 2
 
 == Description:
 The `afconvert` command is a macOS tool for converting audio files. Below is the breakdown of each component in the command:
