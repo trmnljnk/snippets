@@ -1,7 +1,8 @@
 = `afconvert` Command Breakdown
 
 [source, bash]
-afconvert in.flac out.m4a -f m4af -d aacp -q 127 -s 2 -c 2
+afconvert in.flac out.m4a -f m4af -d aacp -q 127 -s 2 -c 2`
+
 
 == Description:
 The `afconvert` command is a macOS tool for converting audio files. Below is the breakdown of each component in the command:
@@ -31,6 +32,16 @@ The `afconvert` command is a macOS tool for converting audio files. Below is the
 - `-c 2`  
   Specifies the number of output channels:  
   * `2` = Stereo output (two audio channels).
+
+
+Help: afconvert -h or afconvert -hf
+
+== Inspection:
+
+[source, bash]
+afinfo in.flac or afinfo out.m4a
+
+Help: afinfo -h
 
 == Summary:
 This command converts `in.flac` to an AAC+ file (`out.m4a`) with the following parameters:
