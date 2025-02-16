@@ -2,9 +2,9 @@
 
 Remove all lines that contain alphabetic characters in Vim, you can use the global command with a regular expression that matches alphabetic characters. Here’s how you can do it: 
 
-```vim
+[source, vim]
 :g/\a/d
-```
+
 
 •	: enters command-line mode.
 •	g stands for “global,” applying the command to all matching lines.
